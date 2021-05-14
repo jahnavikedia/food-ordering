@@ -70,7 +70,7 @@ const Checkout = (props) => {
       }`}>
         <label htmlFor='street'>Street</label>
         <input type='text' id='street' ref={streetInputRef}/>
-        {!formInputsValidity.enteredStreetisValid && <p>Please enter a valid street!</p>}
+        {!formInputsValidity.street && <p>Please enter a valid street!</p>}
       </div>
       <div className={`${classes.control} ${
           formInputsValidity.postal ? '' : classes.invalid
